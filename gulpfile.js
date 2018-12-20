@@ -28,7 +28,7 @@ const cssLint = require("./stylelintrc.json");
 const paths = {
     src: {
         dir: 'src/templates',
-        styles: ['src/css/**/*.css', '!src/css/media.css'],
+        styles: ['src/css/**/*.scss', '!src/css/media.css'],
         scripts: 'src/scripts/*js'
     },
     build: {

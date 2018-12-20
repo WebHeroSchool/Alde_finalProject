@@ -1,0 +1,27 @@
+.header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 0 10px #000;
+}
+.logo {
+    width: 20%;
+    text-align: center;
+}
+.menu {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    &__item {
+        font-size: 20px;
+        &-link {
+            color: #000;
+            text-decoration: none;
+            &:hover {
+                color: #0094FF;
+                text-decoration-line: underline;
+            }
+        }
+    }
+}
