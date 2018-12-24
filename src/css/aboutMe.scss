@@ -1,0 +1,47 @@
+.wrap {
+    margin-top: 90px;
+}
+.about {
+    
+}
+.me {
+    display: flex;
+    align-items: flex-end;
+    &__photo {
+        width: 20%;
+        height: 10%;
+        margin-right: 70px;
+    }
+    &__name {
+        font-size: 84px;
+        color: #83838E;
+        line-height: 40px;
+    }
+    &__surname {
+        margin: 0;
+        font-size: 84px;
+        color: #FFC700;
+        & span {
+            margin: 0;
+            margin-left: -20px;
+            color: #83838E;
+        }
+    }
+}
+.iam {
+    margin-top: 80px;
+    &__title {
+        font-size: 33px;
+        & span {
+            color: #0094FF;
+        }
+    }
+    &__text {
+        margin-top: 35px;
+        font-size: 23px;
+        line-height: 35px;
+        & a {
+            color: #0094FF;
+        }
+    }
+}

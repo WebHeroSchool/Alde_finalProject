@@ -126,7 +126,7 @@ gulp.task('css', () => {
 });
 
 gulp.task('assets', () => {
-    const imgFilter = filter(['**/*.png', '**/*.svg']);
+    const imgFilter = filter(['**/*.png', '**/*.svg', '**/*.jpg']);
     glob(paths.assets, (err, files) => {
         if (!err) {
             gulp.src(files)
