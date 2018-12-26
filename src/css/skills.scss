@@ -1,0 +1,41 @@
+.skills {
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    &__title {
+        width: 45%;
+        & h2 {
+            position: sticky;
+            top: 10em;
+            min-height: 2em;
+            font-size: 33px;
+            color: #0094FF;
+            font-weight: 600;
+        }
+        & p {
+            font-size: 33px;
+            position: sticky;
+            top: 12em;
+            min-height: 2em;
+        }
+    }
+    &__list {
+        width: 40%;
+    }
+   
+}
+.list__item {
+    margin-bottom: 50px;
+    &-title {
+        font-size: 23px;
+        margin-bottom: 15px;
+        & span {
+            margin-right: 10px;
+            color: #FFC700;
+        }
+    }
+    &-text {
+        font-size: 23px;
+    }
+}
+
