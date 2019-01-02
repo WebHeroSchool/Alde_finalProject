@@ -39,7 +39,7 @@
                     html_url,
                     description
                 });
-            })
+            });
 
             console.log(formatedResult);
             return formatedResult;
@@ -48,8 +48,8 @@
             result.forEach(item => {
                 renderRepos(item.name, item.html_url, item.description);
 
-            })
+            });
         });
-})()
+})();
 
 
