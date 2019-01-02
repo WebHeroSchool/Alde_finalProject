@@ -1,5 +1,5 @@
 {
-  "name": "Tesla",
+  "name": "tesla",
   "version": "1.0.0",
   "description": "You must have installed: `node`, `npm`, `gulp`.",
   "main": "index.js",
@@ -51,5 +51,7 @@
     "pre-push": "^0.1.1",
     "stylelint": "^9.9.0"
   },
-  "dependencies": {}
+  "dependencies": {
+    "@babel/polyfill": "^7.2.5"
+  }
 }
