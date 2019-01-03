@@ -1,27 +1,21 @@
 .git {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 200px;
+    margin-bottom: 500px;
     &__title {
         width: 45%;
         &-wrap {
             position: sticky;
-            top: 10em;
+            top: 20em;
             min-height: 2em;
         }
         & h2 {
-            position: sticky;
-            top: 5em;
-            min-height: 2em;
             font-size: 33px;
             color: #0094FF;
             font-weight: 600;
         }
         & p {
             font-size: 33px;
-            position: sticky;
-            top: 12em;
-            min-height: 2em;
         }
     }
     &__list {

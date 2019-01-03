@@ -1,0 +1,9 @@
+.footer {
+    height: 500px;
+    background-color: #2F2F38;
+    &-wrap {
+        max-width: 1250px;
+        min-width: 320px;
+        margin: auto;
+    }
+}
