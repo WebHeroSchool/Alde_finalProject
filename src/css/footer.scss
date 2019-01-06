@@ -1,9 +1,93 @@
 .footer {
     height: 500px;
     background-color: #2F2F38;
+    display: flex;
     &-wrap {
         max-width: 1250px;
         min-width: 320px;
         margin: auto;
+        display: flex;
+        justify-content: space-between;
     }
+    &__iam {
+        width: 30%;
+        color: #DFDFE6;
+        &-title {
+            font-size: 33px;
+            font-weight: 500;
+            margin-bottom: 30px;
+        }
+        &-text {
+            color: #ADADB9;
+            font-size: 23px;
+        }
+    }
+    &__menu {
+        width: 10%;
+        display: flex;
+        flex-direction: column;
+        margin: 8px;
+        &-title {
+            font-size: 23px;
+            color: #DFDFE6;
+            font-weight: 500;
+            padding-bottom: 20px;
+        }
+        &-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            height: 100%;
+            color: #ADADB9;
+            cursor: pointer;
+        }
+        &-item {
+            margin-bottom: 15px;
+            &:hover {
+                color: #0094FF;
+                text-decoration: underline;
+            }
+        }
+    }
+    &__contact {
+        width: 25%;
+        &-title {
+            font-size: 23px;
+            font-weight: 500;
+            color: #DFDFE6;
+            padding-bottom: 20px;
+        }
+        &-mail {
+            font-size: 23px;
+            font-weight: 500;
+            color: #F2F2F2;
+            text-decoration: none;
+            margin-bottom: 20px;
+            line-height: 45px;
+        }
+        &-tel {
+            font-size: 23px;
+            font-weight: 500;
+            color: #F2F2F2;
+            text-decoration: none;
+        }
+        &-social {
+            display: flex;
+            margin-top: 15px;
+        }
+    }
+}
+.social-linkidin {
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    background: inline('linkidin.svg');
+    background-size: contain;
+}
+.social-github {
+    width: 45px;
+    height: 45px;
+    margin: 10px;
+    background: inline('github.svg');
+    background-size: contain;
 }
