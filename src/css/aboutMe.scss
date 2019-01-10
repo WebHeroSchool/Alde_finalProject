@@ -21,7 +21,7 @@
             padding-top: 30px;
         }
         @media screen and (max-width:629px){
-            font-size: 1.5em;
+            font-size: 1.75em;
         }
     }
     &__photo {
@@ -45,6 +45,9 @@
 }
 .iam {
     margin-top: 80px;
+    @media screen and (max-width:629px){
+        margin-top: 30px;
+    }
     &__title {
         font-size: 33px;
         & span {

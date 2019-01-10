@@ -1,18 +1,32 @@
 .hire-me {
     margin-bottom: 200px;
+    padding: 20px;
+    box-sizing: border-box;
+    @media screen and (max-width:629px){
+        margin-bottom: 50px;
+    }
     &__title{
         font-size: 33px;
         color: #0094FF;
         font-weight: 600;
         margin-bottom: 20px;
+        @media screen and (max-width:629px){
+            font-size: 25px;
+        }
     }
     &__text {
         font-size: 33px;
         margin-bottom: 50px;
+        @media screen and (max-width:629px){
+            font-size: 25px;
+        }
     }
     &__mail {
         font-size: 33px;
         color: #0094FF;
         font-weight: 600;
+        @media screen and (max-width:629px){
+            font-size: 25px;
+        }
     }
 }
