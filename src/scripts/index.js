@@ -74,6 +74,56 @@
             gitWind.scrollIntoView({behavior: 'smooth'});
         });
     }
+    function mobileMenu () {
+        let menuBtn = document.querySelector('.mobile-menu__btn');
+        let menuBtnFirstLine = document.querySelector('.mobile-menu__item');
+        let menuBtnSecondLine = document.querySelector('.mobile-menu__item-second');
+        let menuBtnThirdLine = document.querySelector('.mobile-menu__item-third');
+
+        let profile = document.querySelector('.mobile-menu__profile');
+        let profileSection = document.querySelector('.about');
+        
+        let works = document.querySelector('.mobile-menu__works');
+        let worksSection = document.querySelector('.works');
+
+        let skills = document.querySelector('.mobile-menu__skills');
+        let skillsSection = document.querySelector('.skills');
+
+        let git = document.querySelector('.mobile-menu__git');
+        let gitSection = document.querySelector('.git');
+
+        let linkid = document.querySelector('.mobile-menu__linkid');
+        let mail = document.querySelector('.mobile-menu__mail');
+        let phone = document.querySelector('.mobile-menu__phone');
+        
+        menuBtn.addEventListener('click', () => {
+            profile.classList.toggle('mobile-menu__active');
+            works.classList.toggle('mobile-menu__active');
+            skills.classList.toggle('mobile-menu__active');
+            git.classList.toggle('mobile-menu__active');
+            linkid.classList.toggle('mobile-menu__active');
+            mail.classList.toggle('mobile-menu__active');
+            phone.classList.toggle('mobile-menu__active');
+
+            menuBtnFirstLine.classList.toggle('mobile-menu__item-active');
+            menuBtnSecondLine.classList.toggle('mobile-menu__item-second-active');
+            menuBtnThirdLine.classList.toggle('mobile-menu__item-third-active');
+        });
+        
+        profile.addEventListener('click', () => {
+            profileSection.scrollIntoView({behavior: 'smooth'});
+        });
+        works.addEventListener('click', () => {
+            worksSection.scrollIntoView({behavior: 'smooth'});
+        });
+        skills.addEventListener('click', () => {
+            skillsSection.scrollIntoView({behavior: 'smooth'});
+        });
+        git.addEventListener('click', () => {
+            gitSection.scrollIntoView({behavior: 'smooth'});
+        });
+    }
+    mobileMenu();
     getRepos(name);
     scrollToItem();
 })();
