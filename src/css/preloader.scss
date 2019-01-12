@@ -1,0 +1,24 @@
+.preloader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    position: fixed;
+    z-index: 100;
+    &-img {
+        width: 143px;
+        height: 140px;
+        background: url('../images/preLoader.svg')no-repeat;
+        animation: load 2s infinite;
+    }
+}
+@keyframes load {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}

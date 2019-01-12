@@ -1,6 +1,12 @@
 (function () {
     const name = 'aldeowl';
 
+    function preloader () {
+        window.onload = function () {
+            let preloader = document.getElementById('preloader');
+            preloader.style.display = 'none';
+        }
+    }
     function renderRepos(name, href, descrip){
         let target = document.querySelector('.git__list');
 
@@ -41,8 +47,6 @@
                         description
                     });
                 });
-    
-                console.log(formatedResult);
                 return formatedResult;
             })
             .then(result => { 
@@ -53,24 +57,43 @@
             });
     }
     function scrollToItem (){
+        let aboutMe = document.querySelector('#footerAboutMe');
+        let aboutMeSection = document.querySelector('.about');
+        
+        aboutMe.addEventListener('click', () => {
+            aboutMeSection.scrollIntoView({behavior: 'smooth'});
+        });
+
         let worksBtn = document.querySelector('#myworks');
+        let footerWorks = document.querySelector('#footerWorks');
         let worksWind = document.querySelector('.works');
         
         worksBtn.addEventListener('click', () => {
             worksWind.scrollIntoView({behavior: 'smooth'});
         });
+        footerWorks.addEventListener('click', () => {
+            worksWind.scrollIntoView({behavior: 'smooth'});
+        });
 
         let skillsBtn = document.querySelector('#skills');
+        let footerSkills = document.querySelector('#footerSkills');
         let skillsWind = document.querySelector('.skills');
         
         skillsBtn.addEventListener('click', () => {
             skillsWind.scrollIntoView({behavior: 'smooth'});
         });
+        footerSkills.addEventListener('click', () => {
+            skillsWind.scrollIntoView({behavior: 'smooth'});
+        });
 
         let gitBtn = document.querySelector('#git');
+        let footerGit = document.querySelector('#footerGit');
         let gitWind = document.querySelector('.git');
         
         gitBtn.addEventListener('click', () => {
+            gitWind.scrollIntoView({behavior: 'smooth'});
+        });
+        footerGit.addEventListener('click', () => {
             gitWind.scrollIntoView({behavior: 'smooth'});
         });
     }
@@ -123,6 +146,7 @@
             gitSection.scrollIntoView({behavior: 'smooth'});
         });
     }
+    preloader();
     mobileMenu();
     getRepos(name);
     scrollToItem();

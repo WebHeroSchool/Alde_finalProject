@@ -4,24 +4,16 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 20px;
+    @media screen and (max-width:1149px){
+        height: auto;
+    }
     &__title {
         padding-left: 37px;
         @media screen and (max-width:1149px){
             padding-left: 0;
         }
     }
-    @media screen and (max-width:1149px){
-        height: auto;
-    }
-}
-.title-text {
-    margin: 15px;
-    font-size: 33px;
-    color: #0094FF;
-    font-weight: 600;
-}
-.works {
-    padding: 20px;
     &__list {
         display: flex;
         justify-content: space-around;
@@ -69,4 +61,10 @@
             opacity: 1;
         }
     }
+}
+.title-text {
+    margin: 15px;
+    font-size: 33px;
+    color: #0094FF;
+    font-weight: 600;
 }
