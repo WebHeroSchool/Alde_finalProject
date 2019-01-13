@@ -5,7 +5,7 @@
         window.onload = function () {
             let preloader = document.getElementById('preloader');
             preloader.style.display = 'none';
-        }
+        };
     }
     function renderRepos(name, href, descrip){
         let target = document.querySelector('.git__list');
