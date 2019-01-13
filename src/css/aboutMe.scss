@@ -10,28 +10,29 @@
 .about {
     padding: 20px;
     box-sizing: border-box;
-}
-.me {
-    display: flex;
-    align-items: flex-end;
-    @media screen and (max-width:629px){
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    &-text {
-        font-size: 2em;
-        @media screen and (max-width:699px){
-            padding-top: 30px;
-        }
+    &__title {
+        display: flex;
+        align-items: flex-end;
         @media screen and (max-width:629px){
-            font-size: 1.75em;
+            flex-direction: column;
+            align-items: flex-start;
         }
+
     }
     &__photo {
         width: 250px;
         margin-right: 70px;
         @media screen and (max-width:699px){
             margin-right: 15px;
+        }
+    }
+    &__text {
+        font-size: 2em;
+        @media screen and (max-width:699px){
+            padding-top: 30px;
+        }
+        @media screen and (max-width:629px){
+            font-size: 1.75em;
         }
     }
     &__name {
@@ -45,24 +46,24 @@
             color: #83838E;
         }
     }
-}
-.iam {
-    margin-top: 80px;
-    @media screen and (max-width:629px){
-        margin-top: 30px;
-    }
-    &__title {
-        font-size: 33px;
-        & span {
-            color: #0094FF;
+    &__content {
+        margin-top: 80px;
+        @media screen and (max-width:629px){
+            margin-top: 30px;
         }
-    }
-    &__text {
-        margin-top: 35px;
-        font-size: 23px;
-        line-height: 35px;
-        & a {
-            color: #0094FF;
+        &-title {
+            font-size: 33px;
+            & span {
+                color: #0094FF;
+            }
+        }
+        &-text {
+            margin-top: 35px;
+            font-size: 23px;
+            line-height: 35px;
+            & a {
+                color: #0094FF;
+            }
         }
     }
 }
