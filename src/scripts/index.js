@@ -15,6 +15,7 @@
         
         let title = document.createElement('a');
         title.classList.add('git__item-title');
+        title.setAttribute('target', '_blank');
 
         let desc = document.createElement('p');
         desc.classList.add('git__item-text');
