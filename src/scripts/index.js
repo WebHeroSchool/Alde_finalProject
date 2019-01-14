@@ -101,8 +101,8 @@
     function mobileMenu () {
         let menuBtn = document.querySelector('.mobile-menu__btn');
         let menuBtnFirstLine = document.querySelector('.mobile-menu__item');
-        let menuBtnSecondLine = document.querySelector('.mobile-menu__item-second');
-        let menuBtnThirdLine = document.querySelector('.mobile-menu__item-third');
+        let menuBtnSecondLine = document.querySelector('.mobile-menu__item_second');
+        let menuBtnThirdLine = document.querySelector('.mobile-menu__item_third');
 
         let profile = document.querySelector('.mobile-menu__profile');
         let profileSection = document.querySelector('.about');
@@ -130,8 +130,8 @@
             phone.classList.toggle('mobile-menu__active');
 
             menuBtnFirstLine.classList.toggle('mobile-menu__item-active');
-            menuBtnSecondLine.classList.toggle('mobile-menu__item-second-active');
-            menuBtnThirdLine.classList.toggle('mobile-menu__item-third-active');
+            menuBtnSecondLine.classList.toggle('mobile-menu__item_second-active');
+            menuBtnThirdLine.classList.toggle('mobile-menu__item_third-active');
         });
         
         profile.addEventListener('click', () => {
