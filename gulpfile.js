@@ -28,7 +28,7 @@ const cssLint = require("./stylelintrc.json");
 const paths = {
     src: {
         dir: 'src/templates',
-        styles: ['src/css/**/*.scss', '!src/css/media.css'],
+        styles: ['src/css/**/*.scss'],
         scripts: 'src/scripts/*js'
     },
     build: {
@@ -47,7 +47,6 @@ const paths = {
     },
     templates: 'src/templates/**/*.hbs',
     assets: 'src/images/**',
-    contextJson: 'src/test.json',
 };
 
 env({
@@ -126,7 +125,7 @@ gulp.task('css', () => {
 });
 
 gulp.task('assets', () => {
-    const imgFilter = filter(['**/*.png', '**/*.svg']);
+    const imgFilter = filter(['**/*.png', '**/*.svg', '**/*.jpg']);
     glob(paths.assets, (err, files) => {
         if (!err) {
             gulp.src(files)
@@ -158,8 +157,6 @@ gulp.task('watch', () => {
     gulp.watch(paths.templates, ['compile']);
     gulp.watch(paths.src.scripts, ['js']);
     gulp.watch(paths.src.styles, ['css']);
-    gulp.watch(paths.contextJson)
-        .on('change', browserSync.reload);
     gulp.watch(`${paths.build.dir}/**/*`)
         .on('change', browserSync.reload);
 });
