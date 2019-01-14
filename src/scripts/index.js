@@ -81,7 +81,7 @@
         let skillsWind = document.querySelector('.skills');
         
         skillsBtn.addEventListener('click', () => {
-            skillsWind.scrollIntoView({behavior: 'smooth'});
+            skillsWind.scrollIntoView({behavior: "smooth"});
         });
         footerSkills.addEventListener('click', () => {
             skillsWind.scrollIntoView({behavior: 'smooth'});
@@ -135,16 +135,16 @@
         });
         
         profile.addEventListener('click', () => {
-            profileSection.scrollIntoView({behavior: 'smooth'});
+            profileSection.scrollIntoView({block: 'start',behavior: 'smooth'});
         });
         works.addEventListener('click', () => {
-            worksSection.scrollIntoView({behavior: 'smooth'});
+            worksSection.scrollIntoView({behavior: "smooth"});
         });
         skills.addEventListener('click', () => {
-            skillsSection.scrollIntoView({behavior: 'smooth'});
+            skillsSection.scrollIntoView({block: 'start', behavior: 'smooth'});
         });
         git.addEventListener('click', () => {
-            gitSection.scrollIntoView({behavior: 'smooth'});
+            gitSection.scrollIntoView({block: 'start',behavior: 'smooth'});
         });
     }
     preloader();
